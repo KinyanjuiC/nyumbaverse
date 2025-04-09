@@ -353,6 +353,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Email validation function
+function validateEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
 // Profile Management
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize profile data if not exists
@@ -386,20 +392,26 @@ document.addEventListener('DOMContentLoaded', () => {
         const email = document.getElementById('userEmail').value;
         const password = document.getElementById('userPassword').value;
 
-        if (name && email && password) {
-            const userProfile = {
-                isLoggedIn: true,
-                name: name,
-                email: email,
-                password: password,
-                savedProperties: []
-            };
-            localStorage.setItem('userProfile', JSON.stringify(userProfile));
-            alert('Sign up successful!');
-            checkLoginStatus();
-        } else {
+        if (!name || !email || !password) {
             alert('Please fill in all fields');
+            return;
         }
+
+        if (!validateEmail(email)) {
+            alert('Please enter a valid email address');
+            return;
+        }
+
+        const userProfile = {
+            isLoggedIn: true,
+            name: name,
+            email: email,
+            password: password,
+            savedProperties: []
+        };
+        localStorage.setItem('userProfile', JSON.stringify(userProfile));
+        alert('Sign up successful!');
+        checkLoginStatus();
     });
 
     // Edit profile button click handler
