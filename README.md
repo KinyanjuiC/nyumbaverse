@@ -1,57 +1,63 @@
+# NyumbaVerse - East African Real Estate Platform
+
 <div align="center">
+  <img src="./assets/images/logo.png" alt="NyumbaVerse Logo" width="200"/>
   
-  ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/homeverse)
-  ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/homeverse?style=social)
-  ![GitHub forks](https://img.shields.io/github/forks/codewithsadee/homeverse?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-  [![YouTube Video Views](https://img.shields.io/youtube/views/6HZ4nZmU_pE?style=social)](https://youtu.be/6HZ4nZmU_pE)
-
-  <br />
-  <br />
+  <h2>Your Gateway to East African Real Estate</h2>
   
-  <img src="./readme-images/project-logo.png" />
-
-  <h2 align="center">Homeverse - Real estate website</h2>
-
-  Homeverse is fully responsive Real estate website, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
-
-  <a href="https://codewithsadee.github.io/homeverse/"><strong>➥ Live Demo</strong></a>
-
+  NyumbaVerse is a comprehensive real estate platform connecting buyers, renters, and sellers across East Africa. 
+  Discover beautiful properties in Kenya, Tanzania, Uganda, Rwanda, and Ethiopia.
 </div>
 
-<br />
+## Features
 
-### Demo Screeshots
+- 🏠 Property Listings: Browse through a wide range of properties across East Africa
+- 🔍 Advanced Search: Find properties by location, price, and amenities
+- 📱 Responsive Design: Access the platform from any device
+- 🌍 Local Focus: Properties specifically curated for East African markets
+- 💰 Multiple Currencies: Listings in local currencies (KSh, TSh, UGX, RWF)
 
-![homeverse Desktop Demo](./readme-images/desktop.png "Desktop Demo")
-![homeverse Mobile Demo](./readme-images/mobile.png "Mobile Demo")
+## Technologies Used
 
-### Prerequisites
+- HTML5
+- CSS3
+- JavaScript
+- [Ionicons](https://ionic.io/ionicons) for icons
 
-Before you begin, ensure you have met the following requirements:
+## Getting Started
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
-### Run Locally
-
-To run **Homeverse** locally, run this command on your git bash:
-
-Linux and macOS:
-
+1. Clone the repository:
 ```bash
-sudo git clone https://github.com/codewithsadee/homeverse.git
+git clone https://github.com/YOUR_USERNAME/nyumbaverse.git
 ```
 
-Windows:
+2. Open `index.html` in your web browser
 
-```bash
-git clone https://github.com/codewithsadee/homeverse.git
+## Project Structure
+
+```
+nyumbaverse/
+├── assets/
+│   ├── css/
+│   ├── images/
+│   └── js/
+├── index.html
+└── README.md
 ```
 
-### Contact
+## Contributing
 
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
+We welcome contributions to improve NyumbaVerse. Please feel free to:
+- Submit bug reports
+- Suggest new features
+- Create pull requests
 
-### License
+## License
 
-This project is **free to use** and does not contains any license.
+This project is open source and available under the MIT License.
+
+## Contact
+
+For inquiries about NyumbaVerse, please contact:
+- Email: info@nyumbaverse.com
+- Location: Nairobi, Kenya
