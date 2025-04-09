@@ -409,7 +409,7 @@
           <ul class="property-list has-scrollbar">
 
             <li>
-              <div class="property-card">
+              <div class="property-card" data-property-id="property1">
 
                 <figure class="card-banner">
 
@@ -521,7 +521,7 @@
             </li>
 
             <li>
-              <div class="property-card">
+              <div class="property-card" data-property-id="property2">
 
                 <figure class="card-banner">
 
@@ -633,7 +633,7 @@
             </li>
 
             <li>
-              <div class="property-card">
+              <div class="property-card" data-property-id="property3">
 
                 <figure class="card-banner">
 
@@ -745,7 +745,7 @@
             </li>
 
             <li>
-              <div class="property-card">
+              <div class="property-card" data-property-id="property4">
 
                 <figure class="card-banner">
 
@@ -1425,12 +1425,72 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/support-classes.js"></script>
+  <script src="./assets/js/design-patterns.js"></script>
 
   <!-- 
     - ionicon link
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Profile Modal -->
+  <div class="modal" id="profileModal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>User Profile</h2>
+        <div class="profile-container">
+            <!-- Sign Up Form -->
+            <div id="signupForm" class="profile-section">
+                <h3>Sign Up</h3>
+                <div class="profile-form">
+                    <div class="form-group">
+                        <label for="userName">Full Name</label>
+                        <input type="text" id="userName" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="userEmail">Email</label>
+                        <input type="email" id="userEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="userPassword">Password</label>
+                        <input type="password" id="userPassword" placeholder="Enter your password" required>
+                    </div>
+                    <button id="signupButton" class="save-btn">Sign Up</button>
+                </div>
+            </div>
+
+            <!-- Profile Display -->
+            <div id="profileDisplay" class="profile-section" style="display: none;">
+                <h3>Your Profile</h3>
+                <div class="profile-info">
+                    <p><strong>Name:</strong> <span id="displayName"></span></p>
+                    <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+                </div>
+                <div class="saved-properties">
+                    <h4>Saved Properties</h4>
+                    <div id="savedPropertiesList" class="saved-properties-list"></div>
+                </div>
+                <button id="editProfile" class="edit-btn">Edit Profile</button>
+                <button id="logoutButton" class="logout-btn">Logout</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Cart Modal -->
+  <div class="modal" id="cartModal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Your Cart</h2>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-total">
+        <span>Total Properties:</span>
+        <span id="cartTotal">0</span>
+      </div>
+      <button id="checkoutButton">Proceed to Checkout</button>
+    </div>
+  </div>
 
 </body>
 
